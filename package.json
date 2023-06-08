@@ -1,0 +1,58 @@
+{
+  "name": "insomnia-plugin-count-in-page",
+  "description": "Count the number of occurrences of a regex, number or string in the response",
+  "author": "Otho DuBoise",
+  "license": "MIT",
+  "insomnia": {
+    "name": "insomnia-plugin-count-in-page",
+    "displayName": "Count in Page",
+    "description": "Count the number of occurrences of a regex, number or string in the response",
+    "publisher": {
+      "name": "Otho DuBoise"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "htts://github.com/user/insomnia-plugin-count-in-page.git"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --ignore-path .gitignore --write ."
+  },
+  "bugs": {
+    "url": "htts://github.com/user/insomnia-plugin-count-in-page/issues"
+  },
+  "homepage": "https://gitlab.com/okdv/create-insomnia-plugin",
+  "createInsomniaPluginTemplate": "simple",
+  "rawName": "count-in-page",
+  "devDependencies": {
+    "eslint": "8.42.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "insomnia-plugin-template-simple": "1.0.1",
+    "prettier": "2.8.8"
+  },
+  "dependencies": {},
+  "main": "app.js",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    }
+  },
+  "gitHead": "14d16792019b12d66e7232e81b6624426c1c7426"
+}
