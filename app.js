@@ -1,6 +1,6 @@
 // https://docs.insomnia.rest/insomnia/hooks-and-actions
 
-import { pd } from 'pretty-data'
+var pd = require('pretty-data').pd
 
 const sanitizeInput = str => {
   if (str.startsWith('/') && str.endsWith('/')) {
@@ -68,5 +68,5 @@ const count = async context => {
   return false
 }
 
-export const requestActions = [trigger]
-export const responseHooks = [count]
+module.exports.requestActions = [trigger]
+module.exports.responseHooks = [count]
