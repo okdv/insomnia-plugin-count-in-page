@@ -21,7 +21,7 @@ module.exports.requestActions = [
     action: async (context, data) => {
       const { request } = data
       const prompt = await context.app.prompt('Count in page', {
-        label: 'Count in page',
+        label: 'Count in page (RegEx format: /REGEX HERE/)',
         submitName: 'Count',
         cancelable: true,
       })
