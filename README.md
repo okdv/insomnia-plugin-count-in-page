@@ -27,7 +27,7 @@ Count the total occurrences of a matched string or regular expression in a respo
 ## Usage
 
 1. Click the dropdown arrow of the request you would like to search the response of and select "Count in Page"
-2. Input a string or regular expression (**Note:** just like native Find in Page in Insomnia, wrap your input in '/' to treat at RegEx. e.g. EXAMPLE is a string, /EX[A-Z]+/ is a RegEx.) and hit Count
+2. Input as string or regular expression (**Note:** just like native Find in Page in Insomnia, wrap your input in '/' to treat at RegEx. e.g. `EXAMPLE` is a string, `/EX[A-Z]+/` is a RegEx.) and hit Count
 3. Wait a moment, you'll notice the request is automatically resent, shortly after you will get a popup showing the input, total matches, total lines, and a list of all of the above
 4. Any subsequent requests will not use this input, you must start from Step 1 each time you want to use this plugin 
 
@@ -35,7 +35,7 @@ Count the total occurrences of a matched string or regular expression in a respo
 
 - Cannot use this plugin on historical responses, when you attempt to "Count in Page" it will resend the request and generate a new response to count in. There is no current workaround for this aside from potentially using other plugins to fake responses.
 - Only designed to work with XML and JSON, however the 'total matches' count should work regardless of format. Matched lines may not as responses often do not come pre-formatted, and so they are formatted with [pretty-data.js](http://www.eslinstructor.net/pretty-data/) based on their content-type, and at this time only XML and JSON content-types are checked, but if the response comes pre-formatted then hey, it will probably work. 
-- Cannot match across multiple lines. e.g. `/<lineOne\/>\w*[\r\n]{1}\w*<lineTwo\/>*/` would not work as the response is broken into lines and each line is independently searched for a match. If needed, removing all formatting to find occurrences like this can be done, but as of now it seems like an edge case so this is not a feature at this time. 
+- Cannot match across multiple lines. e.g. `/<lineOne\/>\s*[\r\n]{1}\s*<lineTwo\/>*/` would not work as the response is broken into lines and each line is independently searched for a match. If needed, removing all formatting to find occurrences like this can be done, but as of now it seems like an edge case so this is not a feature at this time. 
 
 ### Enable / Disable Plugin
 
