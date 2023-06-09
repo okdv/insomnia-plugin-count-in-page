@@ -32,6 +32,7 @@ const count = async context => {
   if (countPrompt && countPrompt.length > 0) {
     const regex = sanitizeInput(countPrompt)
     try {
+      let y = 0
       let body = context.response.getBody().toString('utf-8')
       const contentType = context.response.getHeader('content-type')
       if (contentType.includes('xml')) {
@@ -43,7 +44,10 @@ const count = async context => {
       const matches = []
       bodyArr.map((line, i) => {
         const rgx = typeof regex === 'string' ? new RegExp(regex, 'g') : regex
-        if (rgx.test(line)) {
+        const x = line.match(rgx)
+        if (x && x.length > 0) {
+          console.log(x.length, y)
+          y = y + x.length
           const replaced = line
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
@@ -55,9 +59,9 @@ const count = async context => {
         }
       })
       const html = `
-        <h2>Found ${
-          matches.length
-        } instances of ${countPrompt} in ${context.request.getName()}:</h2>
+        <h2>Found ${y} matches across ${
+        matches.length
+      } rows in ${context.request.getName()}:</h2>
         <p>${matches.join('</p><p>')}</p>
       `
       context.app.showGenericModalDialog(`Count ${countPrompt}`, { html })
