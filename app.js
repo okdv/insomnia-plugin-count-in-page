@@ -47,7 +47,7 @@ const count = async context => {
           const replaced = line
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
-            .replace(regex, match => `<b style="color:red;">${match}</b>`)
+            .replace(rgx, match => `<b style="color:red;">${match}</b>`)
           if (replaced !== line) {
             const res = `<b>${i + 1}</b>: <code>${replaced}</code>`
             matches.push(res)
