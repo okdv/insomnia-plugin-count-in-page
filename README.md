@@ -1,12 +1,12 @@
-# insomnia-plugin-template-simple
+# insomnia-plugin-count-in-page
 
-Template for simple [Insomnia REST Client](https://insomnia.rest/) plugin, bootstrap this template for your next plugin using `npx create-insomnia-plugin <package-name> --simple`
+Count the total occurrences of a matched string or regular expression in a response body in Insomnia REST Client, see a list of all lines where a match was found
 
 ## Installation
 
 ### From Insomnia Plugin Hub
 
-1. Navigate to [https://insomnia.rest/plugins/insomnia-plugin-](https://insomnia.rest/plugins/insomnia-plugin-)
+1. Navigate to [https://insomnia.rest/plugins/insomnia-plugin-count-in-page](https://insomnia.rest/plugins/insomnia-plugin-count-in-page)
 2. Click _Install Plugin_
 3. Click _Open_
 4. Once opened, click _Install_
@@ -15,22 +15,31 @@ Template for simple [Insomnia REST Client](https://insomnia.rest/) plugin, boots
 
 1. Go to _Application_ > _Preferences_ **or** click the cog icon (⚙️)
 2. Navigate to the _Plugins_ tab
-3. Enter `insomnia-plugin-`
+3. Enter `insomnia-plugin-count-in-page`
 4. Click _Install_
 
 ### Manual Install
 
 1. Using a terminal, `cd` into your Insomnia plugins folder - [See Insomnia Docs](https://docs.insomnia.rest/insomnia/introduction-to-plugins)
-2. Run `git clone https://github.com/user/insomnia-plugin-`
-3. Run `cd insomnia-plugin-`
+2. Run `git clone https://github.com/okdv/insomnia-plugin-count-in-page`
+3. Run `cd insomnia-plugin-count-in-page`
 
 ## Usage
 
-Describe how to use your plugin here, see [create-insomnia-plugin/README.md](https://gitlab.com/okdv/create-insomnia-plugin) to learn more about using [create-insomnia-plugin]().
+1. Click the dropdown arrow of the request you would like to search the response of and select "Count in Page"
+2. Input a string or regular expression (**Note:** just like native Find in Page in Insomnia, wrap your input in '/' to treat at RegEx. e.g. EXAMPLE is a string, /EX[A-Z]+/ is a RegEx.) and hit Count
+3. Wait a moment, you'll notice the request is automatically resent, shortly after you will get a popup showing the input, total matches, total lines, and a list of all of the above
+4. Any subsequent requests will not use this input, you must start from Step 1 each time you want to use this plugin 
+
+### Known Limitations
+
+- Cannot use this plugin on historical responses, when you attempt to "Count in Page" it will resend the request and generate a new response to count in. There is no current workaround for this aside from potentially using other plugins to fake responses.
+- Only designed to work with XML and JSON, however the 'total matches' count should work regardless of format. Matched lines may not as responses often do not come pre-formatted, and so they are formatted with [pretty-data.js](http://www.eslinstructor.net/pretty-data/) based on their content-type, and at this time only XML and JSON content-types are checked, but if the response comes pre-formatted then hey, it will probably work. 
+- Cannot match across multiple lines. e.g. `/<lineOne\/>\w*[\r\n]{1}\w*<lineTwo\/>*/` would not work as the response is broken into lines and each line is independently searched for a match. If needed, removing all formatting to find occurrences like this can be done, but as of now it seems like an edge case so this is not a feature at this time. 
 
 ### Enable / Disable Plugin
 
-It's generally a good idea to allow users to easily enable/disable your plugin if it uses actions or hooks, as opposed to relying on the Insomnia steps below.
+It's disabled by default, can only be enabled for a single request by "Count in Page" in request dropdown. Once done once, the plugin goes back to doing nothing
 
 #### Using Insomnia Plugins Settings
 
