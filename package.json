@@ -3,6 +3,7 @@
   "description": "Count and list the amount of occurrences of a regex or string in the response body",
   "author": "Otho DuBoise",
   "license": "MIT",
+  "version": "1.0.0",
   "insomnia": {
     "name": "insomnia-plugin-count-in-page",
     "displayName": "Count in Page",
