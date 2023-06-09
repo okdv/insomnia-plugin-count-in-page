@@ -53,5 +53,8 @@
       "sourceType": "module"
     }
   },
-  "gitHead": "14d16792019b12d66e7232e81b6624426c1c7426"
+  "gitHead": "14d16792019b12d66e7232e81b6624426c1c7426",
+  "dependencies": {
+    "pretty-data": "^0.40.0"
+  }
 }
