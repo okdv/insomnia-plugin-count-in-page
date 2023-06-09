@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "htts://github.com/user/insomnia-plugin-count-in-page.git"
+    "url": "htts://github.com/okdv/insomnia-plugin-count-in-page.git"
   },
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
@@ -21,7 +21,7 @@
     "format": "prettier --ignore-path .gitignore --write ."
   },
   "bugs": {
-    "url": "htts://github.com/user/insomnia-plugin-count-in-page/issues"
+    "url": "htts://github.com/okdv/insomnia-plugin-count-in-page/issues"
   },
   "homepage": "https://gitlab.com/okdv/create-insomnia-plugin",
   "createInsomniaPluginTemplate": "simple",
@@ -33,7 +33,6 @@
     "insomnia-plugin-template-simple": "1.0.1",
     "prettier": "2.8.8"
   },
-  "dependencies": {},
   "main": "app.js",
   "prettier": {
     "semi": false,
