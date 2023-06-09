@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1661"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="insomnia-plugin-count-in-page_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1663"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.69664703"
+     inkscape:cx="56.700163"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1908"
+     inkscape:window-height="2051"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1658">
+    <rect
+       x="195.86564"
+       y="388.38939"
+       width="318.17584"
+       height="126.68382"
+       id="rect3717" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;fill-opacity:0;stroke:#0e0c1d;stroke-width:15;stroke-opacity:1;stroke-dasharray:none"
+       id="path1717"
+       cx="89.454422"
+       cy="87.747574"
+       r="75" />
+    <path
+       style="fill:none;fill-opacity:0;stroke:#0e0c1d;stroke-width:15;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:round"
+       d="m 190.47184,191.38424 -48.86157,-48.145 z"
+       id="path3659" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.58973313,0,0,0.7939233,-83.463007,-269.32338)"
+       id="text3715"
+       style="font-size:48px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';white-space:pre;shape-inside:url(#rect3717);fill:none;fill-opacity:0;stroke:#0e0c1d;stroke-width:3.77953;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="195.86523"
+         y="482.76397"
+         id="tspan7062"><tspan
+           style="font-size:106.667px;stroke:#af1919"
+           id="tspan7060">&lt;/&gt;</tspan></tspan></text>
+  </g>
+</svg>

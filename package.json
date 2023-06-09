@@ -1,16 +1,28 @@
 {
   "name": "insomnia-plugin-count-in-page",
-  "description": "Count the number of occurrences of a regex, number or string in the response",
+  "description": "Count and list the amount of occurrences of a regex or string in the response body",
   "author": "Otho DuBoise",
   "license": "MIT",
   "insomnia": {
     "name": "insomnia-plugin-count-in-page",
     "displayName": "Count in Page",
-    "description": "Count the number of occurrences of a regex, number or string in the response",
+    "description": "Count and list the amount of occurrences of a regex or string in the response body",
     "publisher": {
       "name": "Otho DuBoise"
-    }
+    },
+    "images": {
+      "icon": "icon.svg"
+    },
+    "unlisted": false
   },
+  "keywords": [
+    "insomnia",
+    "insomnia rest client",
+    "insomnia plugin",
+    "count in page",
+    "find in page",
+    "search response body"
+  ],
   "repository": {
     "type": "git",
     "url": "htts://github.com/okdv/insomnia-plugin-count-in-page.git"
@@ -23,7 +35,7 @@
   "bugs": {
     "url": "htts://github.com/okdv/insomnia-plugin-count-in-page/issues"
   },
-  "homepage": "https://gitlab.com/okdv/create-insomnia-plugin",
+  "homepage": "https://insomnia.rest/plugins/insomnia-plugin-count-in-page",
   "createInsomniaPluginTemplate": "simple",
   "rawName": "count-in-page",
   "devDependencies": {
